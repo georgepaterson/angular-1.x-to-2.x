@@ -25,9 +25,29 @@ For instance Yeoman would prepare a rewrite based on files in an assets folder a
 While Bower is a useful package manager, npm also maintains the majority of the same browser ready packages, eliminating the requirement for Bower.
 
 The Grunt build process can also be replaced by a dedicated modules loader suchs as SystemJS https://github.com/systemjs/systemjs or Webpack http://webpack.github.io/. Angular 2 uses SystemJS be default. Angular 1 applications can use a module loader now in preparation for Angular 2 migration.
-	
-	
 
- 
+## Upgrading components
+
+Component directives were introduced in Angular 1.5, they are directives that define their own templates, controllers and bindings. Component directives became components in Angular 2, for a component directive to be upgraded to a component they require the following properties.
+	
+	restrict: 'E'
+	scope: {}
+	bindToController: {}
+	controllerAs
+	template or templateUrl
+
+Component directives may use:	
+	
+	transclude (optional)
+	require (optional)
+	
+Component directives may not use:
+
+	compile
+	replace: true
+	priority/terminal
+
+## Upgrading services
+
 
  
