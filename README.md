@@ -59,13 +59,13 @@ Components in Angular 2 define their own controllers removing the requirement fo
 
 Components define scope, the $scope attribute has been removed.
 
-# Styles
+## Styles
 
 The link tag used in the index page is still used in Angular 1 and 2. Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
 
 	styleUrls: ['app/movie-list.component.css'], 
 	
-# Filters
+## Filters
 
 Filters in Angular 1 effectively become Pipes in Angular 2. Filters that don't become Pipes could alternatively be coded as components.
 
