@@ -26,7 +26,7 @@ While Bower is a useful package manager, npm also maintains the majority of the 
 
 The Grunt build process can also be replaced by a dedicated modules loader suchs as SystemJS https://github.com/systemjs/systemjs or Webpack http://webpack.github.io/. Angular 2 uses SystemJS be default. Angular 1 applications can use a module loader now in preparation for Angular 2 migration.
 
-## Upgrading components
+## Components
 
 Component directives were introduced in Angular 1.5, they are directives that define their own templates, controllers and bindings. Component directives became components in Angular 2, for a component directive to be upgraded to a component they require the following properties.
 	
@@ -47,7 +47,28 @@ Component directives may not use:
 	replace: true
 	priority/terminal
 
-## Upgrading services
+## Services
 
+Services effectively remain the same 
 
- 
+## Controllers
+
+Components in Angular 2 define their own controllers removing the requirement for an independant controller.
+
+## $scope
+
+Components define scope, the $scope attribute has been removed.
+
+# Styles
+
+The link tag used in the index page is still used in Angular 1 and 2. Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
+
+	styleUrls: ['app/movie-list.component.css'], 
+	
+# Filters
+
+Filters in Angular 1 effectively become Pipes in Angular 2. Filters that don't become Pipes could alternatively be coded as components.
+
+## Summary
+
+## References 
