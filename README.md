@@ -85,8 +85,15 @@ Angular 2 adds a styleUrls property to components allowing it to define a style 
 	
 ## Filters
 
-Filters in Angular 1 become Pipes in Angular 2. Filters that don't become Pipes due to performance issue should alternatively be coded as components.
+Filters in Angular 1 become Pipes in Angular 2. Filters that don't become Pipes due to performance issues can alternatively be coded as components.
 
 ## Summary
 
+At the time of writing this document Angular 2 is at release candidate stage.  
+
 ## References 
+
+[Angular Upgrade](https://angular.io/docs/ts/latest/guide/upgrade.html)
+[Angular Quick Reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
+[Angular Quick Start](https://angular.io/docs/ts/latest/quickstart.html)
+[Angular 1 Coding Style](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y001)
