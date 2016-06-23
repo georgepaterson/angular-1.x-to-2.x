@@ -1,6 +1,6 @@
 # Migrating Angular 1.x applications to 2.x
 
-The Angular team have defined an upgrade path for existing [Angular 1 applications](https://angular.io/docs/ts/latest/guide/upgrade.html). 
+The Angular team have defined an upgrade path for existing [Angular 1 applications](https://angular.io/docs/ts/latest/guide/upgrade.html). This document should outline some of the changes that a developer will need to understand in migrating an Angular 1 app to Angular 2.
 
 The migration can be achieved incrementally using the Angular upgrade module to either upgrade Angular 1 modules to Angular 2 or downgrade Angular 2 modules to Angular 1.
 
@@ -40,7 +40,9 @@ It is recommended Angular 1 applications begin using a module loader now in prep
 
 ## Components
 
-Component directives were introduced in Angular 1.5, they are directives that define their own templates, controllers and bindings. Component directives became components in Angular 2, for a component directive to be upgraded to a component they require the following properties.
+Components are the main building block of an Angular 2 app, they are an evolution of the component directive introduced in Angular 1.5
+
+Component directives are directives that define their own templates, controllers and bindings. For a component directive to be upgraded to a component they require the following properties.
 	
 	restrict: 'E'
 	scope: {}
@@ -61,9 +63,11 @@ Component directives may not use:
 
 ## Services
 
-Services effectively remain the same 
+Angular 1 services should be developed as classes, enabling upgrade to Angular 2 service classes.  
 
 ## Controllers
+
+Angular 1 controllers should be developed as classes, enabling upgrade to Angular 2 component classes.
 
 Components in Angular 2 define their own controllers removing the requirement for an independant controller.
 
@@ -73,13 +77,15 @@ Components define scope, the $scope attribute has been removed.
 
 ## Styles
 
-The link tag used in the index page is still used in Angular 1 and 2. Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
+The link tag used in the index page is still used in Angular 1 and 2. 
+
+Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
 
 	styleUrls: ['app/movie-list.component.css'], 
 	
 ## Filters
 
-Filters in Angular 1 effectively become Pipes in Angular 2. Filters that don't become Pipes could alternatively be coded as components.
+Filters in Angular 1 become Pipes in Angular 2. Filters that don't become Pipes due to performance issue should alternatively be coded as components.
 
 ## Summary
 
