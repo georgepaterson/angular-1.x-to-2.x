@@ -8,6 +8,16 @@ To be able to upgrade or downgrade components it is necessary that the component
 
 Where the Angular code styles have been implemented, the seperation of concerns should support automated unit testing through frameworks such as Jasmine. Unit testing should continue through to the migrated application supported the developer during the build.
 
+## TypeScript
+
+Angular 2 applications can be written in JavaScript, Dart or TypeScript.
+
+Dart as a language compiles to JavaScript so unless there is a historic reason to use Dart it is recommended to use JavaScript or TypeScript.
+
+TypeScript is a superset of ECMAScript 2015; which is in turn a superset of JavaScript. TypeScript adds optional types, classes, and modules to JavaScript, and compiles to ECMAScript 3 compatible JavaScript currently found in browsers.
+
+Valid JavaScript is also valid TypeScript so it is possible to upgrade your existing Angular 1 app to a TypeScript Angular 2 app.  
+
 ## Module loading
 
 Using Angular modularity rules the application would have a number of smaller JavaScript files to load. In Angular 1 builds this may have been maintained with Grunt/Gulp and Bower.
