@@ -6,7 +6,7 @@ The Angular team have defined an upgrade path for existing [Angular 1 applicatio
 
 The migration can be achieved incrementally using the Angular upgrade module to either upgrade Angular 1 modules to Angular 2 or downgrade Angular 2 modules to Angular 1.
 
-To be able to upgrade or downgrade components it is necessary that the component conforms to certain code styles https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md. The Rule of 1 https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y001, folders by feature https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#folders-by-feature-structure, and modularity rules https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#modularity. With the application structured in a modular styles it enables the application to be upgraded one module at a time.
+To be able to upgrade or downgrade components it is necessary that the component conforms to certain [code styles](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) . The [Rule of 1](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y001)  , [folders by feature](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#folders-by-feature-structure), and [modularity rules](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#modularity). With the application structured in a modular styles it enables the application to be upgraded one module at a time.
 
 Using the Angular 1 style rules also enables comprehensive unit testing, the Angular 1 unit tests can be used in the Angular 2 application.
 
