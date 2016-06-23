@@ -61,15 +61,29 @@ Component directives may not use:
 	replace: true
 	priority/terminal
 
+An Angular 1 component directive would look like:
+
+
+An Angular 2 component would look like:
+
 ## Services
 
-Angular 1 services should be developed as classes, enabling upgrade to Angular 2 service classes.  
+Angular 1 services should be developed as classes, enabling an upgrade to Angular 2 service classes.  
+
+An Angular 1 service would look like:
+
+
+An Angular 2 service class would look like:
 
 ## Controllers
 
-Angular 1 controllers should be developed as classes, enabling upgrade to Angular 2 component classes.
+Angular 1 controllers should be developed as classes, enabling an upgrade to Angular 2 component classes.
 
 Components in Angular 2 define their own controllers removing the requirement for an independant controller.
+
+Example controller:
+
+Example controller class:
 
 ## $scope
 
@@ -82,10 +96,17 @@ The link tag used in the index page is still used in Angular 1 and 2.
 Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
 
 	styleUrls: ['app/movie-list.component.css'], 
+
+Example styleUrl in a component:
+
 	
 ## Filters
 
 Filters in Angular 1 become Pipes in Angular 2. Filters that don't become Pipes due to performance issues can alternatively be coded as components.
+
+Example Angular 1 filter:
+
+Example Angular 2 pipe:
 
 ## Summary
 
