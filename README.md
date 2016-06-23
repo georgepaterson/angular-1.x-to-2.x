@@ -93,7 +93,7 @@ At the time of writing this document Angular 2 is at release candidate stage.
 
 ## References 
 
-[Angular Upgrade](https://angular.io/docs/ts/latest/guide/upgrade.html)
-[Angular Quick Reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
-[Angular Quick Start](https://angular.io/docs/ts/latest/quickstart.html)
-[Angular 1 Coding Style](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y001)
+* [Angular Upgrade](https://angular.io/docs/ts/latest/guide/upgrade.html)
+* [Angular Quick Reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
+* [Angular Quick Start](https://angular.io/docs/ts/latest/quickstart.html)
+* [Angular 1 Coding Style](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#style-y001)
