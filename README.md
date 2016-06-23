@@ -1,6 +1,8 @@
 # Migrating Angular 1.x applications to 2.x
 
-The Angular team have defined an upgrade path for existing Angular 1 applications https://angular.io/docs/ts/latest/guide/upgrade.html. 
+The Angular team have defined an upgrade path for existing [Angular 1 applications](https://angular.io/docs/ts/latest/guide/upgrade.html). 
+
+
 
 The migration can be achieved incrementally using the Angular upgrade module to either upgrade Angular 1 modules to Angular 2 or downgrade Angular 2 modules to Angular 1.
 
