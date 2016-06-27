@@ -135,10 +135,6 @@ Angular 1 controllers should be developed as classes, enabling an upgrade to Ang
 
 Components in Angular 2 define their own controllers removing the requirement for an independant controller.
 
-Example controller:
-
-Example controller class:
-
 ## $scope
 
 Components define scope, the $scope attribute has been removed.
