@@ -146,9 +146,6 @@ The link tag used in the index page is still used in Angular 1 and 2.
 Angular 2 adds a styleUrls property to components allowing it to define a style sheet.
 
 	styleUrls: ['app/movie-list.component.css'], 
-
-Example styleUrl in a component:
-
 	
 ## Filters
 
@@ -163,7 +160,7 @@ Example Angular 2 currency pipe:
 	<td>{{movie.price | currency:'USD':true}}</td>
 
 
-Further examples of pipes can be found at the [filters and pipes quick reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html#!#filters-pipes)
+Further examples of pipes can be found at the [filters and pipes quick reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html#!#filters-pipes).
 
 ## Summary
 
