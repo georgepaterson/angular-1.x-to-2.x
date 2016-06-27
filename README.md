@@ -110,10 +110,24 @@ Using the component API, less boilderplate code is needed to be written. Further
 
 Angular 1 services should be developed as classes, enabling an upgrade to Angular 2 service classes.  
 
-An Angular 1 service would look like:
+An Angular 1 service as a class would look like:
+
+	class HelloWorld {  
+	    getMessage () {
+	        return 'Hello World.';
+	    }
+	}
+
+	app.service('HelloWorld', HelloWorld); 
 
 
-An Angular 2 service class would look like:
+The class could then be upgraded to Angular 2:
+
+	import { upgradeAdapter } from './upgrade_adapter';
+
+	upgradeAdapter.upgradeNg1Provider('HelloWorld'); 
+
+Further information can be found at [making Angular 1 dependencies injectable to Angular2](https://angular.io/docs/ts/latest/guide/upgrade.html#!#making-angular-1-dependencies-injectable-to-angular-2).
 
 ## Controllers
 
@@ -144,9 +158,16 @@ Example styleUrl in a component:
 
 Filters in Angular 1 become Pipes in Angular 2. Filters that don't become Pipes due to performance issues can alternatively be coded as components.
 
-Example Angular 1 filter:
+Example Angular 1 currency filter:
 
-Example Angular 2 pipe:
+	<td>{{movie.price | currency}}</td>
+
+Example Angular 2 currency pipe:
+
+	<td>{{movie.price | currency:'USD':true}}</td>
+
+
+Further examples of pipes can be found at the [filters and pipes quick reference](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html#!#filters-pipes)
 
 ## Summary
 
