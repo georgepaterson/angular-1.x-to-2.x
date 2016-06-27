@@ -1,4 +1,4 @@
-# Migrating Angular 1.x applications to 2.x
+# Migrating Angular 1.x applications to 2
 
 The Angular team have defined an upgrade path for existing [Angular 1 applications](https://angular.io/docs/ts/latest/guide/upgrade.html). This document should outline some of the changes that a developer will need to understand in migrating an Angular 1 app to Angular 2.
 
@@ -164,7 +164,7 @@ Further examples of pipes can be found at the [filters and pipes quick reference
 
 ## Summary
 
-At the time of writing this document Angular 2 is at release candidate stage.  
+At the time of writing this document Angular 2 is at the release candidate stage. The upgrade process is stable and there is a defined path for structuring your existing Angular 1 application to meet the requirements of an Angular 2 application. Exisitng or new Angular 1 applications should be developed according to the [code style guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) to prepare for migration to Angular 2.   
 
 ## References 
 
