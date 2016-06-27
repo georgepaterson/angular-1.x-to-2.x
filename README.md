@@ -61,10 +61,50 @@ Component directives may not use:
 	replace: true
 	priority/terminal
 
-An Angular 1 component directive would look like:
+Angular 1 component directive ready for Angular 2:
 
+	export function heroDetailDirective() {
+	  return {
+	    restrict: 'E',
+	    scope: {},
+	    bindToController: {
+	      hero: '=',
+	      deleted: '&'
+	    },
+	    template: `
+	      <h2>{{ctrl.hero.name}} details!</h2>
+	      <div><label>id: </label>{{ctrl.hero.id}}</div>
+	      <button ng-click="ctrl.onDelete()">Delete</button>
+	    `,
+	    controller: function() {
+	      this.onDelete = () => {
+	        this.deleted({hero: this.hero});
+	      };
+	    },
+	    controllerAs: 'ctrl'
+	  };
+	}
 
-An Angular 2 component would look like:
+Angular 1 component directive using the component API:
+
+	export const heroDetail = {
+	  bindings: {
+	    hero: '=',
+	    deleted: '&'
+	  },
+	  template: `
+	    <h2>{{$ctrl.hero.name}} details!</h2>
+	    <div><label>id: </label>{{$ctrl.hero.id}}</div>
+	    <button ng-click="$ctrl.onDelete()">Delete</button>
+	  `,
+	  controller: function() {
+	    this.onDelete = () => {
+	      this.deleted(this.hero);
+	    };
+	  }
+	};
+	
+Using the component API, less boilderplate code is needed to be written. Further information can be found at [Angular Upgrade](https://angular.io/docs/ts/latest/guide/upgrade.html).
 
 ## Services
 
